@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="aqC-cV-VMp" id="tPr-fY-X2f"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="Z2o-QZ-cuM"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="Z2o-QZ-cuM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="asW-FF-gnh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="aqC-cV-VMp" id="Woc-Hx-XGP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khf-vC-797" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,7 +50,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NF0-gf-p6T" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eBf-k2-NXF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eBf-k2-NXF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
